@@ -50,4 +50,8 @@ public class ContatoService {
             throw new RuntimeException("Contato não encontrado");
         }
     }
+
+    public Contato buscarPeloNome (String nome){
+        return contatoRepository.findByNome(nome);
+    }
 }
